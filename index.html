@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Berk Tinaz's Website</title>
+  <title>Berk T&#305;naz's Website</title>
   
-  <meta name="author" content="Berk Tinaz">
+  <meta name="author" content="Berk T&#305;naz">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -11,14 +11,14 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
-                <name>Berk Tinaz</name>
+                <name>Berk T&#305;naz</name>
               </p>
               <p>
                 Hi there! I am a PhD student in Electrical and Computer Engineering at <a href="https://minghsiehece.usc.edu/">University of Southern California (USC)</a>. I'm fortunate to be advised by <a href="https://viterbi-web.usc.edu/~soltanol/">Prof. Mahdi Soltanolkotabi</a>.
@@ -37,7 +37,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/pp.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/pp_cropped.png" class="hoverZoomLink"></a>
+              <a href="images/pp.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/pp.png" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -59,34 +59,83 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My current research direction aims to explore the analysis of over-parametrized neural networks with small initialization as well as inverse problems like algorithms for low-field MRI reconstruction. Representative papers are <span class="highlight">highlighted</span>
+                My current research direction aims to analyze convergence of shallow neural networks with small initialization as well as developing algorithms for inverse problems (such as denoising, deblurring, MRI reconstruction, etc.). Recently, I am also interested with 
+                reasoning in large language models (LLMs), particularly the ability to do self-feedback and which tasks actually benefit from it. Selected papers are shown below.
               </p>
             </td>
           </tr>
         </tbody></table>
+        <!-- AdaptDiffuse START -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
-          <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='zipnerf_image'><img src='images/humus.png' width="160"></div>
-                <img src='images/humus.png' width="160">
+          <tr bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle;text-align: center" align="center">
+              <div style="margin: 0 auto; width: 200px">
+               <img src='images/adaptanddiffuse.png' style="margin: 0 auto; width: 200px">
               </div>
-              <script type="text/javascript">
-                function zipnerf_start() {
-                  document.getElementById('zipnerf_image').style.opacity = "1";
-                }
-
-                function zipnerf_stop() {
-                  document.getElementById('zipnerf_image').style.opacity = "0";
-                }
-                zipnerf_stop()
-              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://jonbarron.info/zipnerf">
-                <span class="papertitle">Humus-Net: Hybrid Unrolled Multi-scale Network
+                <span class="papertitle">Adapt and Diffuse: Sample-adaptive Reconstruction
+                  via Latent Diffusion Models
+                </span>
+              <br>
+              <a href="https://z-fabian.github.io/">Zalan Fabian*</a>,
+              <strong>Berk Tinaz*</strong>,
+              <a href="https://viterbi-web.usc.edu/~soltanol/">Mahdi Soltanolkotabi</a>,
+              <br>
+              <em>arXiv</em>, 2023
+              <br>
+              <a href="">GitHub</a>
+              /
+              <a href="">Paper Link</a>
+              <p></p>
+              <p>
+              Details coming soon!
+              </p>
+            </td>
+          </tr></table>
+          <!-- AdaptDiffuse END  -->
+         <!-- DIRACDIFFUSION START -->
+         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
+          <tr bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle;text-align: center" align="center">
+              <div style="margin: 0 auto; width: 200px">
+               <img src='images/diracdiffusion.png' style="margin: 0 auto; width: 200px">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">DiracDiffusion: Denoising and Incremental
+                  Reconstruction with Assured Data-Consistency
+                </span>
+              <br>
+              <a href="https://z-fabian.github.io/">Zalan Fabian</a>,
+              <strong>Berk Tinaz</strong>,
+              <a href="https://viterbi-web.usc.edu/~soltanol/">Mahdi Soltanolkotabi</a>,
+              <br>
+              <em>arXiv</em>, 2023
+              <br>
+              <a href="https://github.com/z-fabian/HUMUS-Net">GitHub</a>
+              /
+              <a href="https://arxiv.org/abs/2303.14353">Paper Link</a>
+              <p></p>
+              <p>
+              Novel framework for solving inverse problems that maintains consistency with
+              the original measurement throughout the reverse process and allows for great flexibility in trading
+              off perceptual quality for improved distortion metrics and sampling speedup via early-stopping.
+              </p>
+            </td>
+          </tr></table>
+          <!-- DIRACDIFFUSION END  -->
+        <!-- HUMUS START -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
+          <tr bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle;text-align: center" align="center">
+              <div style="margin: 0 auto; width: 200px">
+               <img src='images/humus.png' style="margin: 0 auto; width: 200px">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">HUMUS-Net: Hybrid Unrolled Multi-scale Network
                   Architecture for Accelerated MRI Reconstruction</span>
-              </a>
               <br>
               <a href="https://z-fabian.github.io/">Zalan Fabian</a>,
               <strong>Berk Tinaz</strong>,
@@ -103,12 +152,13 @@
               </p>
             </td>
           </tr></table>
+        <!-- HUMUS END  -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:0px">
               <br>
               <p style="text-align:center;font-size:small;">
-                Website template is proudly <i>stolen</i> from <a href="https://jonbarron.info/">Jon Barron</a> <a href="https://github.com/jonbarron/jonbarron_website">(source code)</a>.
+                Website template is proudly <i>stolen</i> from <a href="https://jonbarron.info/" style="font-size:small">Jon Barron</a> <a href="https://github.com/jonbarron/jonbarron_website" style="font-size:small" >(source code)</a>.
               </p>
             </td>
           </tr>
