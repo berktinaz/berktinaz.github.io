@@ -27,9 +27,12 @@
                 Previously, I was an undergraduate student in the Department of Electrical and Electronics Engineering at Bilkent University, where I worked in <a href="http://www.icon.bilkent.edu.tr/">Imaging and Computational Neuroscience Laboratory (ICON Lab)</a> 
                 in National Magnetic Resonance Research Center under the supervision of <a href="http://kilyos.ee.bilkent.edu.tr/~cukur/">Prof. Tolga Çukur</a> with a focus on deep learning for accelerated MRI synthesis and reconstruction. 
               </p>
+              <p>
+                <strong>I am currently looking for full-time research scientist/engineer positions starting Summer 2026. Please feel free to reach out if you have any opportunities!</strong>
+              </p>
               <p style="text-align:center">
                 <a href="mailto:tinaz@usc.edu">Email</a> &nbsp/&nbsp
-                <a href="data/Tinaz_CV_Internship_2024.pdf">CV</a> &nbsp/&nbsp
+                <a href="data/Tinaz_CV_Job_Search_2025.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=gzIzOtAAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://twitter.com/berk_tinaz">Twitter</a> &nbsp/&nbsp
                 <a href="https://github.com/berktinaz">Github</a> &nbsp/&nbsp
@@ -46,6 +49,7 @@
           <td style="padding:20px;width:100%;vertical-align:middle">
             <heading>News</heading>
             <ul>
+                <li>(Sept 2025) "Emergence and Evolution of Interpretable Concepts in Diffusion Models" got accepted as a Spotlight paper to NeurIPS 2025!</li>
                 <li>(Jun 2025) I gave a talk at the 2nd Workshop on Visual Concepts at CVPR 2025 on our new work "Emergence and Evolution of Interpretable Concepts in Diffusion Models Through the Lens of Sparse Autoencoders". Our paper got selected for the "Best paper honorable mention" award!</li>
                 <li>(May 2025) Proud to be recognized as a "top reviewer" for ICML 2025 (and for NeurIPS 2024 last year).</li>
                 <li>(May 2025) Returning to Amazon in their Seattle office as an Applied Science intern for the summer of 2025!</li>
@@ -67,9 +71,10 @@
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
-              <p>
-                My current research focuses on analyzing the convergence of shallow neural networks with small initialization, as well as developing algorithms for inverse problems, such as denoising, deblurring, and MRI reconstruction. I also have experience working with large language models (LLMs) from past projects, including knowledge injection via continual pretraining during my internship at Amazon and investigating their ability for self-feedback. Recently, I've become interested in the mechanistic interpretability of vision-language models (VLMs) and diffusion models. Selected papers are shown below.
-              </p>
+              <p> I am currently passionate about post-training strategies to improve visual reasoning in Multimodal Large Language Models (MLLMs), with a focus on enhancing how models process and reason over complex visual data. A central goal of my work is to address limitations such as the lack of mental visualization, which we revealed in our recent benchmark <i>Hyperphantasia</i> (NeurIPS 2025). </p> 
+              <p> Previously, my research spanned mechanistic interpretability, inverse problems, large language models, and learning theory, approaching machine learning problems from both practical and theoretical perspectives. Using sparse autoencoders (SAEs), I studied how human-interpretable concepts emerge and evolve across reverse diffusion steps in diffusion models (NeurIPS Spotlight 2025). I developed diffusion-based methods for inverse problems—including denoising and deblurring—in our works <i>Adapt-and-Diffuse</i> (ICML Spotlight 2024) and <i>DiracDiffusion</i> (ICML 2024). I also worked on a transformer–convolution hybrid architecture achieving state-of-the-art performance on the fastMRI dataset: <i>HUMUS-Net</i> (NeurIPS 2022). On the theory side, I analyzed the gradient descent dynamics of learning linear target functions with shallow ReLU networks (in submission). </p> 
+              <p> I also have extensive experience working with large language models (LLMs), including fine-tuning, continual pretraining, post-training, prompting, and evaluation. During my 2024 internship at Amazon, I worked on knowledge injection into LLMs through continual pretraining with DoRA adapters and retrieval-augmented generation. In my 2025 Amazon internship, I developed a novel approach for extracting use-case–adaptive embeddings from LLM hidden states for downstream applications. I have additionally explored improving mathematical reasoning in LLMs via self-feedback and self-revision loops, without relying on external verifiers. </p>
+              <p> Selected papers are shown below. </p>
             </td>
           </tr>
         </tbody></table>
@@ -86,22 +91,53 @@
                 </span>
               <br>
               <strong>Berk Tinaz*</strong>,
-              <a href="https://z-fabian.github.io/">Zalan Fabian*</a>
+              <a href="https://z-fabian.github.io/">Zalan Fabian*</a>,
               <a href="https://viterbi-web.usc.edu/~soltanol/">Mahdi Soltanolkotabi</a>
               (* denote equal contribution)
               <br>
-              <em>CVPR VisCon (Spotlight + Best paper honorable mention) and GMCV Workshops</em>, 2025
+              <em>NeurIPS <span style="color:red;">(Spotlight)</span></em>, 2025
               <br>
-              <a href="https://github.com/AIF4S/">GitHub</a>
+              <em>CVPR VisCon <span style="color:red;">(Spotlight + Best paper honorable mention)</span></span> and GMCV Workshops</em>, 2025
+              <br>
+              <a href="https://github.com/berktinaz/stable-concepts">GitHub</a>
               /
               <a href="https://arxiv.org/abs/2504.15473">Paper Link</a>
               <p></p>
               <p>
-              We investigate how human-interpretable concepts evolve in diffusion models through the generative process.
+              Using sparse autoencoders (SAEs), we investigate how human-interpretable concepts evolve in diffusion models through the generative process. Furthermore, we demonstrate that these concepts can be manipulated to steer image generation.
               </p>
             </td>
           </tr></table>
           <!-- DiffusionSAE END  -->
+        <!-- Hyperphantasia START -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
+          <tr bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle;text-align: center" align="center">
+              <div style="margin: 0 auto; width: 200px">
+               <img src='images/hyperphantasia.png' style="margin: 0 auto; width: 200px">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">Hyperphantasia: A Benchmark for Evaluating the Mental Visualization Capabilities of Multimodal LLMs
+                </span>
+              <br>
+              <a href="">Mohammad Shahab Sepehri</a>,
+              <strong>Berk Tinaz</strong>,
+              <a href="https://z-fabian.github.io/">Zalan Fabian</a>,
+              <a href="https://viterbi-web.usc.edu/~soltanol/">Mahdi Soltanolkotabi</a>
+              <br>
+              <em>NeurIPS</em>, 2025
+              <br>
+              <a href="https://github.com/MShahabSepehri/Hyperphantasia">GitHub</a>
+              /
+              <a href="https://arxiv.org/abs/2507.11932">Paper Link</a>
+              <p></p>
+              <p>
+              We introduce Hyperphantasia, a benchmark to evaluate the mental visualization capabilities of multimodal large language models (MLLMs). We demonstrate a substantial gap between the performance of humans and state-of-the-art MLLMs.
+              </p>
+            </td>
+          </tr></table>
+        <!-- Hyperphantasia END  -->
         <!-- AdaptDiffuse START -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
           <tr bgcolor="#ffffd0">
@@ -120,7 +156,7 @@
               <a href="https://viterbi-web.usc.edu/~soltanol/">Mahdi Soltanolkotabi</a>
               (* denote equal contribution)
               <br>
-              <em>ICML (Spotlight)</em>, 2024
+              <em>ICML <span style="color:red;">(Spotlight)</span></em>, 2024
               <br>
               <em>NeurIPS Deep Inverse Workshop</em>, 2023
               <br>
@@ -198,7 +234,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:center;font-size:small;">
-                Website template is proudly <i>stolen</i> from <a href="https://jonbarron.info/" style="font-size:small">Jon Barron</a> <a href="https://github.com/jonbarron/jonbarron_website" style="font-size:small" >(source code)</a>.
+                Website template is proudly <i>taken</i> from <a href="https://jonbarron.info/" style="font-size:small">Jon Barron</a> <a href="https://github.com/jonbarron/jonbarron_website" style="font-size:small" >(source code)</a>.
               </p>
             </td>
           </tr>
